@@ -25,7 +25,7 @@
     <![endif]-->
 
 
-
+@yield('styles')
 
 </head>
 
@@ -144,6 +144,9 @@
                             <li>
                                 <a href="{{route('admin.posts.create')}}">Create Post</a>
                             </li>
+                            <li>
+                                <a href="{{route('admin.comments.index')}}">All Comments</a>
+                            </li>
 
                         </ul>
                         <!-- /.nav-second-level -->
@@ -174,12 +177,14 @@
                             </li>
 
                             <li>
-                                <a href="{{route('admin.media.upload')}}">Upload Media</a>
+                                <a href="{{route('admin.media.create')}}">Upload Media</a>
                             </li>
 
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
+
+
 
 
 
@@ -350,7 +355,9 @@
 <script src="{{asset('js/libs.js')}}"></script>
 
 
-@yield('footer')
+
+
+@yield('scripts')
 
 
 
